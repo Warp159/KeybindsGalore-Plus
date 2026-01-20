@@ -4,8 +4,6 @@ This repository is a fork of KeybindsGalore Plus (Blender / AV306), which itself
 
 ## What’s different in this fork
 - Updated and fixed for Minecraft 1.21.10
-- Improved spectator-mode filtering
-- Fixed category/action label rendering issues
 
 ## Credits
 - Cael — original KeybindsGalore
