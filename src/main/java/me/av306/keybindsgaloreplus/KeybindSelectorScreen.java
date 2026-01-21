@@ -45,10 +45,11 @@ public class KeybindSelectorScreen extends Screen {
     private static final Pattern MC_ID_PATTERN = Pattern.compile("minecraft:([a-z0-9_./-]+)");
 
     public KeybindSelectorScreen(InputUtil.Key key) {
-        super(NarratorManager.EMPTY);
-        this.conflictedKey = key;
-        this.conflicts.addAll(KeybindManager.getConflicts(key));
-    }
+    super(NarratorManager.EMPTY);
+    this.conflictedKey = key;
+    this.conflicts.addAll(KeybindManager.getConflicts(key));
+}
+
 
     @Override
     protected void init() {
