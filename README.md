@@ -1,126 +1,110 @@
-# KeybindsGalore Plus — Warp159 Fork (1.21.10)
+# KeybindsGalore Plus — Warp159 Fork (1.21.10+)
 
-This repository is a fork of KeybindsGalore Plus (Blender / AV306), which itself is a fork of KeybindsGalore (Cael) and updates by HVB007.
+⚠️ **Disclaimer**  
+This is a **community fork** created to keep the mod working on newer Minecraft versions.  
+I am **not a Java developer** — this fork exists purely to preserve functionality.
 
-## What’s different in this fork
-- Updated and fixed for Minecraft 1.21.10
+Most of the update and fixes were done **with the help of ChatGPT**, by carefully adapting the original code to newer Minecraft / Fabric APIs.
+
+---
+
+## About this fork
+
+This repository is a fork of **KeybindsGalore Plus** by Blender / AV306,  
+which itself is based on **KeybindsGalore** by Cael, with updates by HVB007.
+
+### Purpose of this fork
+- Keep the mod **working on modern Minecraft versions**
+- Provide **basic functionality** on **1.21.10+**
+- Avoid the mod becoming abandoned while the original author is busy
+
+This fork does **not** aim to add new features or redesign the mod.
+
+---
+
+## Current status
+
+✅ **Working**
+- Core keybind conflict handling
+- Mod loads and functions correctly on **Minecraft 1.21.10+**
+- Compatible with modern Fabric versions
+
+⚠️ **Known limitations**
+- The **pie menu animation** (circular animation from the original mod)  
+  is **currently not fully functional**
+- The menu still works, but **without the original animated behavior**
+
+This is a known issue and **not yet solved**.
+
+---
+
+## Minecraft versions
+
+- **Minecraft:** 1.21.10+  
+- **Loader:** Fabric  
+- **Forge / NeoForge:** via Sinytra Connector (not tested extensively)
+
+---
+
+## What’s different from upstream
+
+- Updated codebase for **Minecraft 1.21.10+**
+- Removed deprecated rendering code no longer supported by modern Minecraft
+- Fixed build issues caused by API changes
+
+No gameplay changes were intentionally made.
+
+---
 
 ## Credits
-- Cael — original KeybindsGalore
-- HVB007 — 1.20 updates
-- Blender / AV306 — KeybindsGalore Plus fork
-- Warp159 — 1.21.10 fork & fixes
 
+All original credit goes to the original authors.
+
+- **Cael** — original *KeybindsGalore*
+- **HVB007** — updates for 1.20.x
+- **Blender / AV306** — *KeybindsGalore Plus*
+- **Warp159** — maintenance fork for 1.21.10+
+
+This fork would not exist without their work.
+
+---
+
+## Original mod description
 
 A keybind conflict management and general quality-of-life mod!
 
-- Provides a **pie menu** for conflicting keybinds
-- **Corrects vanilla conflict handling**, similar to [Keybinds Fix](https://www.curseforge.com/minecraft/mc-mods/keybind-fix)
-- Supports **mouse buttons**
-- **Fixes many bugs** and adds many improvements to the original mod
-- Supports **1.20.x** and **1.21.x**
+- Provides a **pie menu** for conflicting keybinds  
+- **Corrects vanilla conflict handling**, similar to Keybinds Fix  
+- Supports **mouse buttons**  
+- Fixes many bugs and adds improvements  
 - Supports **Fabric** and **Forge/NeoForge (via Sinytra Connector)**
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/AV306/KeybindsGalore-Plus/blob/14b7001f913c9bf089ef4fc41934c60dcf0db275/images/kbg_plus_demo.gif?raw=true" max-height=400 />
 </div>
 
-<br>
+---
 
-## How to Use
+## Notes for users
 
-KeybindsGalore+ will automatically detect conflicting keybinds!
+If you are looking for:
+- new features
+- visual improvements
+- animation reworks
 
-- **Pressing** a conflicted key *down* will **open the pie menu**
-- **Releasing** a conflicted key (when the pie menu is displayed) will **activate the highlighted action** and **close** the pie menu
-- **Clicking** on a section of the pie menu (without releasing the key) will **activate the highlighted action** and **deactivate** it when the key is **released**
+This fork may **not** be suitable.
 
-NB: When the pie menu *opens*, all actions currently activated (e.g. holding a key down) will be deactivated.
-<br>
+If you just want the mod to **work on newer Minecraft versions**, this fork is for you.
 
-## Modifications to Original
+---
 
-- Optimised conflict searching
-- Keybind labels now show their category along with their name
-- Customisable keybind labels (see [this issue](https://github.com/AV306/KeybindsGalore-Plus/issues/3))
-- Label texts no longer run off the screen
-- Fully customisable pie menu
-- Allows compatibility with non-vanilla keybinds (insert your mod's keybinds into the [conflict table](https://github.com/AV306/KeybindsGalore-Plus/blob/1.21/src/main/java/me/av306/keybindsgaloreplus/KeybindManager.java) whenever convenient!)
-- **And more...**
+## Contributions
 
-<br>
+Bug reports are welcome,  
+but please keep in mind this is a **maintenance fork**, not an active redesign project.
 
-## Bug-busters :heart:
+---
 
-Bug reports and feature requests VERY welcome!
+## License
 
-- lightmcxx
-- mo9713
-- Poopooracoocoo
-- GabanKillasta
-- Tgaisen
-- GhostIsBeHere
-- Alwis2000
-- StarsShine11904
-- ClutchMasterYT
-- GuardedHoney53
-- BumbleTree
-- Mideks
-- UNI717
-- IG114514
-- WxAaRoNxW
-
-(let me know if I missed you!)
-
-<br>
-
-## Roadmap
-
-### 1.3.5
-
-- Bugfixes
-
-### 1.4.0
-
-- Blacklist/whitelist toggle for ignored key list
-- Per-keybind overrides in custom data for:
-  - Label text (category + name / name only / custom text)
-  - sector colour
-  - sector opacity
-- Removal of non-lazy conflict check
-
-(need more features? make a [feature request](https://github.com/AV306/KeybindsGalore-Plus/issues)!)
-
-<br>
-
-## [[ Old README below ]]
-
-# KeybindsGalore_HVB007_1.20.x
-Updated to 1.20 by HVB007.
-
->Github : https://github.com/HVB007og/KeybindsGalore_HVB007_1.20.x 
->Fabric mod Which opens an popup when there are multiple actions bound to the same key in the Minecraft>controls>Keybinds settings. then choose one of the options to use.
-
->Changelog keybindsgalore-0.2-1.20:
-
-Works with 1.20.2
-
-Added Feature: Will not open the menu when pressing certain keys (Due to keys compatibility with other mods) as follows: 
-1.tab 
-2.caps lock 
-3.left shift 
-4.left control 
-5.space 
-6.left alt 
-7.w 
-8.a 
-9.s 
-10.d
-
-Future Feature: Add mod setting to configure the keys to disable.
-
->Does not support conflicting Keybinds not using the Minecraft Keybinds settings.
-
-Updated to 1.20.x by HVB007
-
-Updated version of keybindsgalore by Cael : https://github.com/CaelTheColher/KeybindsGalore
+Same license as the original project.
