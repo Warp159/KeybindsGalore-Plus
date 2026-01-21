@@ -23,7 +23,7 @@
 		"UNI717 -- sinytra Connector compatibility",
 		"IG114514 -- mouse support and compatibility",
 		"WxAaRoNxW -- click-to-activate and compatibility",
-		"Warp159 -- 1.21.10 fork & fixes",
+		"Warp159 -- 1.21.10–1.21.11 fork & fixes",
 		"...and more on GitHub!"
 	],
 	"license": "GNU Lesser General Public License v3.0",
@@ -37,7 +37,7 @@
       "keybindsgaloreplus.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.8",
-		"minecraft": "1.21.10"
+		"fabricloader": ">=0.18.0",
+		"minecraft": ">=1.21.10 <=1.21.11"
 	}
 }
